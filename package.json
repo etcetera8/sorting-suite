@@ -1,0 +1,21 @@
+{
+  "name": "sorting-suite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bubbleSort.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-sorted": "^0.1.0"
+  }
+}
