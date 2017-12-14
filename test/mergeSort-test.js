@@ -1,5 +1,6 @@
 const { assert } = require('chai');
 const mergeSort = require('../mergeSort.js');
+
 const chai = require("chai"),
 expect = chai.expect;
 

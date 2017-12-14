@@ -1,11 +1,11 @@
 function mergeSort(array) {
-  if (array.length === 1) {
+  if (array.length < 2) {
     return array;
   }
   
-  let middle =  Math.floor(array.length/2)
-  var left = array.slice(0, middle)
-  var right = array.slice(middle, array.length); 
+  let middle =  array.length/2
+  let left = array.splice(0, middle);
+  let right = array; 
 
   return merge(mergeSort(left), mergeSort(right))
 }
@@ -13,7 +13,7 @@ function mergeSort(array) {
 function merge(left, right) {
 let container = [];
 
-  while (left.length > 0 || right.length > 0) {
+  while (left.length || right.length) {
     if (left[0] > right[0] || left[0] === undefined) {
       container.push(right.shift())
     } else {
@@ -22,5 +22,4 @@ let container = [];
   }
   return container;
 }
-console.log(merge)
 module.exports = mergeSort;
